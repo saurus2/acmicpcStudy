@@ -1,20 +1,13 @@
 #include <iostream>
-#define INF 87654321
 using namespace std;
-int dp[1000001], n;
+int dp[1001]={0};
 int main(){
+    int n;
     cin >> n;
-    for(int i=0; i<=n; i++) dp[i] = INF;
-    //최대값으로 초기화
-    dp[n] = 0;
-    //현재 값은 0
-    for(int i=n; i>=1; i--){
-        if(dp[i] == INF) continue;//연산 후 영향 끼치지 않는 숫자는 통과
-        if(i-1>=1)dp[i-1] = min(dp[i-1],dp[i]+1);
-        if((i%2)==0) dp[i/2] = min(dp[i/2],dp[i]+1);
-        if((i%3)==0) dp[i/3] = min(dp[i/3],dp[i]+1);
-        //+1,/2,/3외 될때만 확인하여 저장해나감
-    }
-    cout << dp[1];
+    dp[1]=1; dp[2]=2;
+    for(int i=3; i<=n; i++) dp[i] = (dp[i-1] + dp[i-2])%10007;
+    //1개랑 2개는 따로 저장
+    //타일을 하니씩 추가했을때 이전의 타일모양들의 합과 경우의 수가 같은 규칙이 있음
+    cout << dp[n];
     return 0;
 }
