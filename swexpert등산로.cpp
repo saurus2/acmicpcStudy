@@ -87,7 +87,7 @@ int main(int argc, const char * argv[]) {
                 
                 if(mp[y2+dis[k][1]][x2+dis[k][0]] >= temp3.val &&
                    kft == -1 &&
-                  ( mp[y2+dis[k][1]][x2+dis[k][0]] - temp3.val ) < K &&
+                   ( mp[y2+dis[k][1]][x2+dis[k][0]] - temp3.val ) < K &&
                    temp3.ck[y2+dis[k][1]][x2+dis[k][0]] == 0){
                     temp3.val = mp[y2][x2] - 1;
                     temp3.x = x2+dis[k][0];
@@ -118,3 +118,4 @@ int main(int argc, const char * argv[]) {
     
     return 0;
 }
+
