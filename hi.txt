@@ -1,0 +1,250 @@
+ls
+cd Documents/
+ls
+ls
+vi test.c
+vi hello.txt
+vi hi.txt
+gcc test.c 
+ls
+./a.out hi.txt 
+./a.out hi.txt hello.txt 
+./a.out -n hi.txt hello.txt 
+vi test.c 
+gcc test.c 
+./a.out -n hi.txt 
+./a.out -n hi.txt hello.txt 
+vi test.c 
+gcc test.c 
+./a.out hi.txt 
+./a.out hi.txt 
+./a.out -n hi.txt 
+rm test.c 
+vi test.c
+gcc test.c 
+./a.out -n hi.txt 
+rm test.c 
+vi test.c
+gcc test.c 
+./a.out hi.txt 
+./a.out hi.txt hello.txt 
+rm test.c 
+vi test.c
+gcc test.c 
+./a.out hi.txt 
+./a.out hi.txt hello.txt 
+rm test.c 
+vi test.c
+gcc test.c 
+./a.out hi.txt hello.txt 
+gcc test.c 
+vi test.c
+gcc test.c 
+./a.out hi.txt hello.txt 
+gcc test.c 
+vi test.c
+gcc test.c 
+./a.out hi.txt hello.txt 
+./a.out -n hi.txt hello.txt 
+./a.out hi.txt hello.txt 
+./a.out hi.txt
+./a.out hi.txt hello.txt 
+./a.out -n hi.txt hello.txt 
+ls
+cd Do
+cd Documents/
+ls
+python3 --version
+mkdir djangogirls
+cd djangogirls/
+python3 -m venv myvenv
+source myvenv/bin/activate
+python3 -m pip install --upgrade pip
+ls
+pwd
+ls myvenv/
+django-admin startproject saurusbot
+pip3 install django
+ls
+mkdir bot_project
+cd bot_project/
+ls
+django-admin startproject mybot
+ls
+python3 manage.py startapp testest
+ls
+cd mybot/
+ls
+python3 manage.py startapp testest
+python3 manage.py migrate
+ls
+cd mybot/
+ls
+ls
+cd ..
+ls
+python3 manage.py runserver port
+python3 manage.py runserver 6824
+ls
+cd Documents/
+ls
+cd djangogirls/
+ls
+cd bot_project/
+ls
+ls
+cd mybot/
+ls
+python3 manage.py runserver 4321
+ls
+ls
+django-admin startproject mybot
+cd ..
+ls
+cd ..
+ls
+. myvenv/bin/activate
+ls
+cd bot_project/
+ls
+cd mybot/
+ls
+django-admin startproject mybot
+ls
+python3 manage.py runserver 123
+https://tutorial.djangogirls.org/ko/installation/https://tutorial.djangogirls.org/ko/installation/
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+rm -rf bot_project/
+ls
+./myvenv/bin/ac
+ls
+cd ..
+ls
+ls
+cd djangogirls/
+ls
+cd myvenv/
+ls
+cd ..
+. myvenv/bin/activate
+ls
+pwd
+django-admin startproject mybot
+ls
+rm -rf mybot/
+ls
+mkdir tistory
+cd tistory/
+ls
+django-admin startproject mybot
+ls
+cd mybot/
+ls
+python3 manage.py startapp testtest
+ls
+python3 manage.py migrate
+ls
+python3 manage.py runserver 1234
+python3 manage.py runserver 1234
+python3 manage.py runserver 1234
+python3 manage.py runserver 1234
+ipconfig
+ifconfig
+ls
+cd Documents/
+ls
+ls
+chmod 400 key/saurus_bot.pem 
+ssh key/saurus_bot.pem ec2-user@52.79.232218
+ssh key/saurus_bot.pem ec2-user@52.79.232.218
+ssh key/saurus_bot.pem ec2-user@52.79.232.218
+chmod 400 key/saurusBot.pem 
+ssh -i key/saurusBot.pem e2-user@52.79.232.218
+ssh -i key/saurusBot.pem e2-user@52.79.232.21[B
+ssh -i key/saurus_bot.pem e2-user@52.79.232.218
+chmod 400 key/saurus_bot.pem 
+ssh -i key/saurus_bot.pem e2-user@52.79.232.218
+ssh -i "saurus_bot.pem" ubuntu@ec2-52-79-232-218.ap-northeast-2.compute.amazonaws.com
+ssh -i "saurus_bot.pem" ubuntu@ec2-52-79-232-218.ap-northeast-2.compute.amazonaws.com
+chmod 400 key/saurus_bot.pem 
+ssh -i "saurus_bot.pem" ubuntu@ec2-52-79-232-218.ap-northeast-2.compute.amazonaws.com
+ssh -i key/saurus_bot.pem ec2-user@52-79-232-218
+sudo su
+ls
+cd Docu
+cd Documents/
+ls
+cd keyt
+cd key
+ls
+pwd
+ls
+ssh -i serverK.pem ubuntu@ec2-13-125-250-226.ap-northeast-2.compute.amazonaws.com
+chmod 400 serverK
+chmod 400 serverK.pem 
+ssh -i serverK.pem ubuntu@ec2-13-125-250-226.ap-northeast-2.compute.amazonaws.com
+ls
+cd Documents/
+ls
+cd key/
+ls
+ssh -i EC2-Che1.pem ubuntu@ec2-13-209-50-255.ap-northeast-2.compute.amazonaws.com
+chmod 400 EC2-Che1.pem 
+ssh -i EC2-Che1.pem ubuntu@ec2-13-209-50-255.ap-northeast-2.compute.amazonaws.com
+ssh -i /Documents/keyEC2-Che1.pem ubuntu@ec2-13-209-50-255.ap-northeast-2.compute.amazonaws.com
+ssh -i /Documents/key/EC2-Che1.pem ubuntu@ec2-13-209-50-255.ap-northeast-2.compute.amazonaws.com
+ls
+cd Documents/
+ls
+cd key
+ssh -i EC2-Che1.pem ubuntu@ec2-13-209-50-255.ap-northeast-2.compute.amazonaws.com
+cd Documents/
+ls
+cd key/
+ls
+chmod 400 newkey.pem 
+ssh -i "newkey.pem" ubuntu@ec2-13-124-188-240.ap-northeast-2.compute.amazonaws.com
+ls
+cd Documents/
+ls
+cd algorithm/
+ls
+cd acmicpcStudy/
+ls
+vi 파핑파핑지뢰찾기_1868.cpp
+git add *
+git -m '0729' commit
+git -m commit
+git -m commit '0723'
+git commit
+git commit -m '0729'
+git push
+vi 파핑파핑지뢰찾기_1868.cpp 
+ls
+cd Downloads/
+ls
+ssh -i "kp.pem" ubuntu@ec2-13-124-25-23.ap-northeast-2.compute.amazonaws.com
+ssh -i "kp.pem" ubuntu@ec2-13-124-25-23.ap-northeast-2.compute.amazonaws.com
+chmod 400 kp.pem 
+ssh -i "kp.pem" ubuntu@ec2-13-124-25-23.ap-northeast-2.compute.amazonaws.com
+ssh -i "kp.pem" ubuntu@ec2-13-124-25-23.ap-northeast-2.compute.amazonaws.com
+ls
+ssh -i "kp.pem" ubuntu@ec2-13-124-25-23.ap-northeast-2.compute.amazonaws.com
+ls
+cd Documents/
+ls
+cd algorithm/
+ls
+cd acmicpcStudy/
+ls
+vi 14226_이모티콘.cpp
+git add *
+git commit -m '0901'
+git push 
+ls
+history -w hi.txt
