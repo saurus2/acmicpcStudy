@@ -143,10 +143,8 @@ int main(){
         answer=10000000;
         deq.clear();
         dfs(0,0);
-        cout << answer << endl;
+        cout << "#" << tc << " " << answer << endl;
     }
-//    arrange();
-//    pf();
 }
 
-
+   
