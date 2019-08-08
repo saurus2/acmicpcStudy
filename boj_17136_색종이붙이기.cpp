@@ -101,14 +101,7 @@ void dfs(int y){
                 pCnt[l]++;
                 cl(l,i,j);
             }
-            if(mp[i][j]==1){
-                cout << "Fail\n";
-                pf();
-                return;
-            }else{
-                cout << "Suss\n";
-                pf();
-            }
+            if(mp[i][j]==1) return;
         }
     }
 }
