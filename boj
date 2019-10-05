@@ -1,0 +1,103 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+vector<int> mp[11][11];
+int sd[11][11],a[11][11],n,m,k;
+int diyx[8][2]={
+    {-1,0},
+    {-1,1},
+    {0,1},
+    {1,1},
+    {1,0},
+    {1,-1},
+    {0,-1},
+    {-1,-1}
+};
+void input(){
+    cin >> n >> m >> k;
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            cin >> a[i][j];
+            sd[i][j]=5;
+        }
+    }
+    for(int i=0; i<m; i++){
+        int y,x,z;
+        cin >> x >> y >> z;
+        mp[x-1][y-1].push_back(z);
+    }
+}
+void spSm(){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(!mp[i][j].empty()){
+                vector<int> tmp;
+                int deadSize=0;
+                sort(mp[i][j].begin(),mp[i][j].end());
+                int mpSize=(int)mp[i][j].size();
+                for(int h=0; h<mpSize; h++){
+                    if(sd[i][j]>=mp[i][j][h]){
+                        sd[i][j]-=mp[i][j][h];
+                        tmp.push_back(mp[i][j][h]+1);
+                    }else{
+                        deadSize+=mp[i][j][h]/2;
+                    }
+                }
+                mp[i][j].clear();
+                int tmpSize=(int)tmp.size();
+                for(int h=0; h<tmpSize; h++){
+                    mp[i][j].push_back(tmp[h]);
+                }
+                tmp.clear();
+                sd[i][j]+=deadSize;
+            }
+        }
+    }
+}
+
+void fall(){
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(!mp[i][j].empty()){
+                int mSize=(int)mp[i][j].size();
+                for(int h=0; h<mSize; h++){
+                    if(mp[i][j][h]%5==0){
+                        for(int l=0; l<8; l++){
+                            int ny=i+diyx[l][0];
+                            int nx=j+diyx[l][1];
+                            if(ny<0 || nx<0 || ny>=n || nx>=n) continue;
+                            mp[ny][nx].push_back(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+void winter(){
+    for(int i=0; i<n; i++)
+        for(int j=0; j<n; j++){
+            sd[i][j]+=a[i][j];
+        }
+}
+
+int main(){
+    input();
+    int answer = 0;
+    for(int i=0; i<k; i++){
+        spSm();
+        fall();
+        winter();
+    }
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(!mp[i][j].empty()){
+                answer+=mp[i][j].size();
+            }
+        }
+    }
+    cout << answer;
+}
+
